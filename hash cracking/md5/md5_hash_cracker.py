@@ -26,7 +26,7 @@ if "--random" in str(args) or "-r" in args:
     exit("Hash cracked!\nCracked hash: " + h_t)
 else:
     if len(args) < 3:
-        exit("python3 md5_hash_cracker.py <list> <hash>\nOptions:\n\t--hex = enables HEX mode\n\t--random uses random strings")
+        exit("python3 md5_hash_cracker.py <list> <hash>\nOptions:\n\t--hex = enables HEX mode\n\t--random = uses random strings")
     filename = args[1]
     if not "/" in filename or not "\\" in filename:
         if "win" in SYSPLAT:
