@@ -1,8 +1,6 @@
 # Code written by https://github.com/Sajmonpcgamer
 import hashlib
+import sys
 
-print("==============================\nmd5 hash creator\nWritten by Sajmonpcgamer\nhttps://github.com/Sajmonpcgamer\n==============================\n")
-
-h = str(input("Word to be hashed: ")).encode()
-h = hashlib.md5(h).hexdigest()
-print(f"Hash (Hex): {h}")
+h = hashlib.md5(sys.argv[1].encode()).hexdigest()
+print(h)
